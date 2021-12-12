@@ -1,8 +1,6 @@
 const { breakfast, lunch, dinner } = require("./menu");
 const { breakfastLogic, lunchLogic, dinnerLogic } = require("./mealLogic");
 
-const qtyOfItems = {};
-
 const orderingSystem = (meal, items = []) => {
   // Check if main or side is missing
   if (items.length === 0) {
@@ -27,6 +25,7 @@ const orderingSystem = (meal, items = []) => {
   }
 
   // Use hash table to keep track of item quantity
+  const qtyOfItems = {};
   for (const item of items) {
     if (!qtyOfItems[item]) qtyOfItems[item] = 1;
     else qtyOfItems[item]++;
