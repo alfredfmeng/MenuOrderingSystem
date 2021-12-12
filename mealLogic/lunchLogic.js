@@ -1,3 +1,5 @@
 module.exports = lunchLogic = (orderedFood) => {
-  console.log(orderedFood.join(", "));
+  if (!orderedFood.includes("Soda")) {
+    console.log(orderedFood.join(", ") + ", Water");
+  }
 };
