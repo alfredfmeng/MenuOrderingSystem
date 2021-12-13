@@ -45,6 +45,7 @@ const orderingSystem = (meal, items = []) => {
   if (meal === dinner) dinnerLogic(orderedFood);
 };
 
+// TEST CASES
 // orderingSystem(breakfast, [1, 2, 3]);
 // orderingSystem(breakfast, [2, 3, 1]);
 // orderingSystem(breakfast, [1, 2, 3, 3, 3]);
